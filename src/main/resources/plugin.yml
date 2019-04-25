@@ -1,0 +1,10 @@
+name: ExampleBar
+version: 1.0
+description: Gay
+author: Mirass
+main: io.github.c9lul12btw.Main
+
+commands:
+  review:
+    description: 'review'
+    usage: '/<command>'
