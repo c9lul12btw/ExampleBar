@@ -13,15 +13,17 @@ public class MainMenuGui extends Gui{
 
     }
 
-    private GuiItem getPlayerMenu() {
-        Gui gui = new PlayerMenuGui(p,)
-        return new GuiItem.Builder().material(Material.BARRIER).name("&cExit Menu").click(() ->
+    private GuiItem getPlayerMenu(Player p) {
+        Gui gui = new PlayerMenuGui(p, 1);
+        return new GuiItem.Builder().material(Material.BARRIER).name("&cExit Menu").click(() -> this.getPlayer().closeInventory())
+                .build();
 
     }
 
-    private GuiItem getStaffMenu() {
-
-
+    private GuiItem getStaffMenu(Player p) {
+        Gui gui = new StaffMenuGui(p, 1);
+        return new GuiItem.Builder().material(Material.BARRIER).name("&cExit Menu").click(() -> this.getPlayer().closeInventory())
+                .build();
     }
 
     private GuiItem getExit() {

@@ -32,14 +32,14 @@ public class RankProgressGui extends Gui {
 
     private GuiItem emptyCell() {
 
-        return new GuiItem.Builder().name("").material(Material.STAINED_GLASS_PANE).data(0)
-                .lore("").build();
+        return new GuiItem.Builder().name(" ").material(Material.STAINED_GLASS_PANE).data(0)
+                .lore(" ").build();
     }
 
     private GuiItem fullCell() {
 
-        return new GuiItem.Builder().name("").material(Material.STAINED_GLASS_PANE).data(5)
-                .lore("").build();
+        return new GuiItem.Builder().name(" ").material(Material.STAINED_GLASS_PANE).data(5)
+                .lore(" ").build();
     }
 
     private GuiItem getCurrentRank() {
@@ -48,28 +48,28 @@ public class RankProgressGui extends Gui {
         switch(currentRank) {
             case 0:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(8)
-                        .lore("","&7Member").build();
+                        .lore(" ","&7Member").build();
             case 1:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(5)
-                        .lore("","&aNovice").build();
+                        .lore(" ","&aNovice").build();
             case 2:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(9)
-                        .lore("","&3Apprentice").build();
+                        .lore(" ","&3Apprentice").build();
             case 3:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(6)
-                        .lore("","&dDesigner").build();
+                        .lore(" ","&dDesigner").build();
             case 4:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(3)
-                        .lore("","&aArchitect").build();
+                        .lore(" ","&aArchitect").build();
             case 5:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(10)
-                        .lore("","&5Artisan").build();
+                        .lore(" ","&5Artisan").build();
             case 6:
                 return new GuiItem.Builder().name("&7Current Build Rank:").material(Material.CONCRETE).data(4)
-                        .lore("","&6Master").build();
+                        .lore(" ","&6Master").build();
             default:
                 return new GuiItem.Builder().name("null").material(Material.CONCRETE).data(0)
-                        .lore("","null").build();
+                        .lore(" ","null").build();
         }
     }
 
@@ -79,25 +79,25 @@ public class RankProgressGui extends Gui {
         switch(nextRank) {
             case 1:
                 return new GuiItem.Builder().name("&7Next Build Rank:").material(Material.CONCRETE).data(5)
-                        .lore("","&aNovice","&7Progress: x/y"/*get the score values*/).build();
+                        .lore(" ","&aNovice","&7Progress: x/y"/*get the score values*/).build();
             case 2:
                 return new GuiItem.Builder().name("&7Next Build Rank:").material(Material.CONCRETE).data(9)
-                        .lore("","&3Apprentice","&7Progress: x/y"/*get the score values*/).build();
+                        .lore(" ","&3Apprentice","&7Progress: x/y"/*get the score values*/).build();
             case 3:
                 return new GuiItem.Builder().name("&7Next Build Rank:").material(Material.CONCRETE).data(6)
-                        .lore("","&dDesigner","&7Progress: x/y"/*get the score values*/).build();
+                        .lore(" ","&dDesigner","&7Progress: x/y"/*get the score values*/).build();
             case 4:
                 return new GuiItem.Builder().name("&7Next Build Rank:").material(Material.CONCRETE).data(3)
-                        .lore("","&aArchitect","&7Progress: x/y"/*get the score values*/).build();
+                        .lore(" ","&aArchitect","&7Progress: x/y"/*get the score values*/).build();
             case 5:
                 return new GuiItem.Builder().name("&7Next Build Rank:").material(Material.CONCRETE).data(10)
-                        .lore("","&5Artisan","&7Progress: x/y"/*get the score values*/).build();
+                        .lore(" ","&5Artisan","&7Progress: x/y"/*get the score values*/).build();
             case 6:
                 return new GuiItem.Builder().name("&7Next Build Rank:").material(Material.CONCRETE).data(4)
-                        .lore("","&6Master","&7Progress: x/y"/*get the score values*/).build();
+                        .lore(" ","&6Master","&7Progress: x/y"/*get the score values*/).build();
             default:
                 return new GuiItem.Builder().name("null").material(Material.CONCRETE).data(0)
-                        .lore("","null").build();
+                        .lore(" ","null").build();
         }
     }
 }
